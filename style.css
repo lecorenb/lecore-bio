@@ -241,3 +241,18 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .mp td s{color:#999}
 .mp td b{font-weight:700}
 .opt-price s{font-size:13px;font-weight:500;color:#999;margin-right:4px}
+
+/* Hero with video loop */
+.hero2{position:relative;overflow:hidden;background:#000;height:calc(100svh - 64px);min-height:600px;max-height:780px}
+.hero-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,.2) 45%,rgba(0,0,0,.9) 100%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;padding:0 22px 24px;text-align:center}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;opacity:.9;margin-bottom:10px}
+.hero2 h1{font-size:27px;font-weight:700;line-height:1.18;letter-spacing:-.01em;margin-bottom:10px;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero-sub{font-size:14px;opacity:.92;line-height:1.45;margin:0 auto 18px;max-width:360px}
+.hero-cta{width:100%;font-size:15px;padding:16px 18px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.hero-reset{font-size:12px;opacity:.85;margin-top:8px}
+.hero-link{display:inline-block;font-size:13.5px;font-weight:600;margin-top:12px;text-decoration:underline;text-underline-offset:4px}
+.hero-trust{display:block;font-size:12px;opacity:.9;margin-top:14px}
+.hero-trust .hs{color:#f5c542;letter-spacing:2px;margin-right:4px}
+@media (prefers-reduced-motion: reduce){.hero-vid{display:none}.hero2{background:#000 url(assets/hero-poster.jpg) center/cover}}
