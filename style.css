@@ -147,11 +147,40 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .steps h3{font-size:14px;font-weight:600;margin-bottom:2px}
 .steps p{font-size:13px;color:#333}
 .fine{font-size:11.5px;color:var(--muted);margin-top:12px;line-height:1.5}
-/* Image framing fixes */
-.row img{object-position:center 18%}
+
 /* Image framing fixes */
 .row img{object-position:center 18%}
 .dlg img{aspect-ratio:auto;height:auto;max-height:62vh;object-fit:contain;background:#111}
 
-/* Membership popups: text only */
-#m-access img,#m-premium img,#m-elite img{display:none}
+/* Memberships: tabbed plans */
+.plans input[type=radio]{position:absolute;opacity:0;pointer-events:none}
+.plans-head{text-align:center;padding:22px 20px 6px}
+.plans-head h2{font-size:17px;font-weight:600}
+.plans-head p{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.45}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#f1f1f1;border-radius:999px;padding:4px;margin:16px 18px 4px}
+.seg label{text-align:center;padding:10px 4px;border-radius:999px;font-size:13.5px;font-weight:600;color:#555;cursor:pointer;transition:background .2s,color .2s}
+#p-a:checked~.seg label[for=p-a],#p-p:checked~.seg label[for=p-p],#p-e:checked~.seg label[for=p-e]{background:#000;color:#fff}
+#p-a:focus-visible~.seg label[for=p-a],#p-p:focus-visible~.seg label[for=p-p],#p-e:focus-visible~.seg label[for=p-e]{outline:2px solid #000;outline-offset:2px}
+.plan-panel{display:none;padding:18px 18px 6px;animation:fadeUp .25s ease}
+#p-a:checked~.panels .pa,#p-p:checked~.panels .pp,#p-e:checked~.panels .pe{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.plan-top{background:#f7f7f7;border-radius:16px;padding:18px}
+.plan-eyebrow{display:flex;align-items:center;justify-content:space-between;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#777}
+.rec{letter-spacing:.04em;font-size:10.5px;background:#000;color:#fff;padding:4px 9px;border-radius:999px}
+.plan-top h3{font-size:22px;font-weight:600;margin:6px 0 4px}
+.plan-freq{display:inline-block;font-size:12.5px;font-weight:600;background:#fff;border:1px solid #e3e3e3;border-radius:999px;padding:5px 11px;margin-bottom:10px}
+.plan-best{font-size:13.5px;color:#444;line-height:1.5}
+.plan-price{display:flex;align-items:baseline;gap:4px;margin:14px 0}
+.plan-price b{font-size:32px;font-weight:700;letter-spacing:-.01em}
+.plan-price span{font-size:14px;color:#666}
+.plan-inc{font-size:11px;font-weight:700;letter-spacing:.14em;color:#777;margin:20px 0 6px;text-transform:uppercase}
+.plan-list{list-style:none}
+.plan-list li{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.45}
+.plan-list li:last-child{border-bottom:0}
+.plan-list svg{flex:none;width:20px;height:20px;padding:3px;border-radius:50%;background:#000;color:#fff;margin-top:1px}
+.plan-list b{font-weight:600}
+.plans-foot{margin:8px 18px 20px;padding:16px;border-radius:16px;background:#f7f7f7;text-align:center}
+.plans-foot p{font-size:13px;color:#444;line-height:1.5;margin-bottom:12px}
+.plans-foot b{color:#000}
+.btn-outline{border:1.5px solid #000;color:#000;background:transparent}
+.plans-text{display:block;font-size:12.5px;font-weight:600;margin-top:12px;text-decoration:underline;text-underline-offset:3px}
