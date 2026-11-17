@@ -256,3 +256,38 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .hero-trust{display:block;font-size:12px;opacity:.9;margin-top:14px}
 .hero-trust .hs{color:#f5c542;letter-spacing:2px;margin-right:4px}
 @media (prefers-reduced-motion: reduce){.hero-vid{display:none}.hero2{background:#000 url(assets/hero-poster.jpg) center/cover}}
+
+/* Service pages */
+body.has-bar{padding-bottom:84px}
+.phero{height:calc(100svh - 64px - 74px);min-height:560px}
+.phero .hero-shade{background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,.6) 46%,rgba(0,0,0,.95) 64%,rgba(0,0,0,.96) 100%)}
+.phero .hero-vid{object-position:center 20%}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#222;border-top:1px solid #222;border-bottom:1px solid #222}
+.facts div{background:#000;text-align:center;padding:14px 4px}
+.facts b{display:block;font-size:14px;font-weight:600}
+.facts span{font-size:11px;opacity:.7}
+.ph2{font-size:21px;font-weight:600;line-height:1.25;margin:6px 0 10px}
+.promo-body .lead+.lead{margin-top:10px}
+.vids-sec{padding:30px 0 6px}
+.vids{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 18px;scrollbar-width:none}
+.vids::-webkit-scrollbar{display:none}
+.vids video{flex:0 0 72%;scroll-snap-align:center;aspect-ratio:9/16;object-fit:cover;border-radius:16px;background:#111}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px}
+.reason{background:#f7f7f7;border-radius:14px;padding:14px}
+.ri{font-size:22px;display:block;margin-bottom:6px}
+.reason h3{font-size:14px;font-weight:600;margin-bottom:4px}
+.reason p{font-size:12.5px;color:#555;line-height:1.45}
+.rt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 16px}
+.rt-grid div{background:#f7f7f7;border-radius:14px;padding:14px}
+.rt-grid b{display:block;font-size:28px;font-weight:700}
+.rt-grid span{font-size:12.5px;color:#555;line-height:1.4;display:block;margin-top:2px}
+.rt-alt{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.rt-alt p{font-size:13.5px;color:#444;margin-bottom:12px;line-height:1.5}
+.rt-alt b{color:#000}
+.faq summary{font-weight:600;font-size:14px}
+.faq .acc-body{line-height:1.55}
+.bookbar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;z-index:45;width:100%;max-width:var(--max);display:flex;align-items:center;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(0,0,0,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #222}
+.bb-txt{flex:1;min-width:0}
+.bb-txt b{display:block;font-size:14px;font-weight:600}
+.bb-txt span{font-size:11.5px;opacity:.75}
+.bookbar .btn{width:auto;padding:12px 22px}
