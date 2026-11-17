@@ -184,3 +184,47 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .plans-foot b{color:#000}
 .btn-outline{border:1.5px solid #000;color:#000;background:transparent}
 .plans-text{display:block;font-size:12.5px;font-weight:600;margin-top:12px;text-decoration:underline;text-underline-offset:3px}
+
+/* Reset box */
+.plans-foot{text-align:left}
+.pf-q{font-size:11px!important;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#777!important;margin-bottom:4px!important}
+.pf-h{font-size:18px!important;font-weight:600;color:#000!important;margin-bottom:6px!important}
+.pf-price{display:flex;align-items:baseline;gap:10px;margin:2px 0 14px}
+.pf-price b{font-size:28px;font-weight:700}
+.pf-price span{font-size:12.5px;font-weight:600;background:#fff;border:1px solid #e3e3e3;border-radius:999px;padding:4px 10px}
+.plans-foot .plans-text{text-align:center}
+
+/* Promo cards */
+.promo-media{position:relative}
+.promo-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.promo-flag{position:absolute;left:14px;top:14px;background:#fff;color:#000;font-size:12px;font-weight:600;padding:7px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.promo-body{padding:20px 18px 22px}
+.promo-body h2{font-size:21px;font-weight:600;line-height:1.25}
+.promo-sub{font-size:13.5px;color:#444;margin-top:6px;line-height:1.5}
+.promo-tag{font-size:14px;font-weight:600;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+.chips span{font-size:12px;font-weight:500;background:#f3f3f3;border-radius:999px;padding:6px 11px}
+.opt-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#777;margin:18px 0 8px}
+.promo input[type=radio]{position:absolute;opacity:0;pointer-events:none}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;border:1.5px solid #e3e3e3;border-radius:14px;padding:13px 14px;cursor:pointer;transition:border-color .15s,background .15s}
+.dot{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid #bbb;position:relative}
+.opt-txt{flex:1;display:flex;flex-direction:column}
+.opt-txt b{font-size:14.5px;font-weight:600}
+.opt-txt small{font-size:12.5px;color:#666}
+.opt-txt em{font-style:normal;font-weight:600;color:#000;background:#f1f1f1;border-radius:999px;padding:1px 7px;margin-left:4px}
+.opt-price{font-size:17px;font-weight:700}
+#hb1:checked~.opts label[for=hb1],#hb8:checked~.opts label[for=hb8],#hb16:checked~.opts label[for=hb16]{border-color:#000;background:#fafafa}
+#hb1:checked~.opts label[for=hb1] .dot,#hb8:checked~.opts label[for=hb8] .dot,#hb16:checked~.opts label[for=hb16] .dot{border-color:#000}
+#hb1:checked~.opts label[for=hb1] .dot::after,#hb8:checked~.opts label[for=hb8] .dot::after,#hb16:checked~.opts label[for=hb16] .dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#000}
+#hb1:focus-visible~.opts label[for=hb1],#hb8:focus-visible~.opts label[for=hb8],#hb16:focus-visible~.opts label[for=hb16]{outline:2px solid #000;outline-offset:2px}
+.opt-cta{margin-top:14px}
+.opt-cta .btn{display:none}
+#hb1:checked~.opt-cta .c1,#hb8:checked~.opt-cta .c8,#hb16:checked~.opt-cta .c16{display:flex}
+.promo-link{display:block;text-align:center;font-size:12.5px;font-weight:600;margin-top:12px;text-decoration:underline;text-underline-offset:3px}
+.rl-price{display:flex;align-items:center;justify-content:space-between;margin:16px 0 14px;padding:14px 16px;background:#f7f7f7;border-radius:14px}
+.rl-price div{display:flex;align-items:baseline;gap:10px}
+.rl-price s{color:#999;font-size:18px;font-weight:600}
+.rl-price b{font-size:30px;font-weight:700}
+.save{font-size:12px;font-weight:700;background:#000;color:#fff;padding:6px 10px;border-radius:999px}
+.promo-fine{font-size:12px;color:#777;text-align:center;margin-top:10px}
