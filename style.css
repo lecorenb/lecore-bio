@@ -228,3 +228,16 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .rl-price b{font-size:30px;font-weight:700}
 .save{font-size:12px;font-weight:700;background:#000;color:#fff;padding:6px 10px;border-radius:999px}
 .promo-fine{font-size:12px;color:#777;text-align:center;margin-top:10px}
+
+/* Member pricing + notes */
+.plan-note{font-size:11.5px;color:#777;text-align:center;margin-top:8px}
+.mp{margin-top:6px;border:1.5px solid #e3e3e3;border-radius:14px;padding:0 14px 4px}
+.mp summary{font-size:13.5px;padding:13px 0}
+.mp[open] summary{border-bottom:1px solid var(--line)}
+.mp table{width:100%;border-collapse:collapse;font-size:12.5px;margin:6px 0 10px}
+.mp th{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#888;text-align:left;padding:6px 0}
+.mp th:not(:first-child),.mp td:not(:first-child){text-align:right;white-space:nowrap;padding-left:10px}
+.mp td{padding:7px 0;border-top:1px solid #f1f1f1}
+.mp td s{color:#999}
+.mp td b{font-weight:700}
+.opt-price s{font-size:13px;font-weight:500;color:#999;margin-right:4px}
