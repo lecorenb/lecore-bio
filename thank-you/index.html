@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | LeCore Newport Beach</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+
+<style>
+  :root {
+    --cream: #f7f2ea;
+    --paper: #fffdf9;
+    --brown: #3b2a1f;
+    --brown-soft: #6b5545;
+    --gold: #b08a4f;
+    --line: #e6dccd;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 48px 20px 64px; }
+  .brand {
+    display: block;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .check {
+    width: 64px; height: 64px;
+    margin: 28px auto 18px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .check svg { width: 30px; height: 30px; }
+  h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: clamp(30px, 7vw, 40px);
+    line-height: 1.15;
+  }
+  .sub { text-align: center; color: var(--brown-soft); margin-top: 10px; }
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 24px;
+    margin-top: 28px;
+  }
+  .label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .product { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 600; margin-top: 6px; }
+  .detail { color: var(--brown-soft); margin-top: 4px; }
+  h2 { font-family: "Playfair Display", serif; font-weight: 600; font-size: 20px; margin-bottom: 14px; }
+  ol { list-style: none; counter-reset: step; }
+  ol li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 44px;
+    min-height: 30px;
+  }
+  ol li + li { margin-top: 16px; }
+  ol li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 0;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-weight: 600; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  ol strong { display: block; font-weight: 600; }
+  ol span { color: var(--brown-soft); font-size: 15px; }
+  .btns { display: grid; gap: 12px; margin-top: 4px; }
+  .btn {
+    display: block;
+    text-align: center;
+    padding: 15px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .btn-primary { background: var(--brown); color: var(--cream); }
+  .btn-outline { border: 1px solid var(--brown); color: var(--brown); }
+  .stores { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .note { font-size: 14px; color: var(--brown-soft); text-align: center; margin-top: 14px; }
+  .contact { text-align: center; margin-top: 28px; font-size: 15px; color: var(--brown-soft); }
+  .contact a { color: var(--brown); font-weight: 600; text-decoration: none; }
+  footer { text-align: center; font-size: 13px; color: var(--brown-soft); margin-top: 32px; }
+  footer a { color: var(--brown-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="brand" href="https://bio.lecorenb.com/">LeCore Newport Beach</a>
+
+  <div class="check" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fffdf9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  </div>
+
+  <h1>You're All Set</h1>
+  <p class="sub">Thank you for your purchase. We can't wait to see you at LeCore.</p>
+
+  <div class="card">
+    <div class="label">Your Purchase</div>
+    <div class="product" id="product-name">Your LeCore Sessions</div>
+    <div class="detail" id="product-detail">Your receipt is on its way to your email.</div>
+  </div>
+
+  <div class="card">
+    <h2>What Happens Next</h2>
+    <ol>
+      <li><strong>Check your email</strong><span>Your receipt has been sent to the email you used at checkout.</span></li>
+      <li><strong>We'll text you within one business day</strong><span>Our team will add your sessions to your LeCore account and help you schedule your first visit.</span></li>
+      <li><strong>Book anytime after that</strong><span>Once your sessions are added, book online or in the LeCore app whenever it suits you.</span></li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Get the LeCore App</h2>
+    <p class="detail" style="margin:-6px 0 16px;">Download the WellnessLiving Achieve app, then search for <strong>LeCore Newport Beach</strong> and sign in with the email you used at checkout.</p>
+    <div class="btns">
+      <div class="stores">
+        <a class="btn btn-outline" href="https://apps.apple.com/us/app/wellnessliving-achieve/id6756274607" target="_blank" rel="noopener">App Store</a>
+        <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.wellnessliving.achieve" target="_blank" rel="noopener">Google Play</a>
+      </div>
+      <a class="btn btn-primary" href="YOUR_BOOKING_URL" target="_blank" rel="noopener">Book on Our Website</a>
+    </div>
+    <p class="note">Booking opens once your sessions are added to your account.</p>
+  </div>
+
+  <p class="contact">
+    Can't wait? Call or text us at<br>
+    <a href="tel:+19499918787">(949) 991-8787</a>
+  </p>
+
+  <footer>
+    1441 Superior Ave, STE A, Newport Beach, CA 92663<br>
+    <a href="https://bio.lecorenb.com/terms">Purchase Terms</a>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var products = {
+      hbot1:  { name: "Hyperbaric Oxygen | Single Session", detail: "1 session, valid for 3 months", value: 100 },
+      hbot8:  { name: "Hyperbaric Oxygen | Buy 6, Get 8", detail: "8 sessions, valid for 6 months", value: 1000 },
+      hbot16: { name: "Hyperbaric Oxygen | Buy 12, Get 16", detail: "16 sessions, valid for 6 months", value: 1600 },
+      red5:   { name: "Red Light | 5-Session Special", detail: "5 sessions, valid for 3 months", value: 150 }
+    };
+
+    var params = new URLSearchParams(window.location.search);
+    var code = params.get("p");
+    var sessionId = params.get("session_id");
+    var product = products[code];
+
+    if (product) {
+      document.getElementById("product-name").textContent = product.name;
+      document.getElementById("product-detail").textContent = product.detail;
+    }
+
+    // Fire Purchase only after a real Stripe checkout, and only once per checkout
+    if (product && sessionId && sessionId.indexOf("cs_") === 0) {
+      var key = "lecore_purchase_" + sessionId;
+      var alreadySent = false;
+      try { alreadySent = localStorage.getItem(key) === "1"; } catch (e) {}
+
+      if (!alreadySent) {
+        fbq("track", "Purchase", {
+          value: product.value,
+          currency: "USD",
+          content_name: product.name,
+          content_ids: [code],
+          content_type: "product"
+        }, { eventID: sessionId });
+        try { localStorage.setItem(key, "1"); } catch (e) {}
+      }
+    }
+  })();
+</script>
+</body>
+</html>
