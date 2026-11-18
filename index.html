@@ -14,7 +14,7 @@
 <meta property="og:image" content="https://bio.lecorenb.com/assets/hero-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f6f1ea">
-<link rel="preload" as="image" href="assets/hero-poster.jpg">
+<link rel="preload" as="image" href="assets/reset-ad-poster.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -263,6 +263,11 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
 .xcard b{display:block;font-family:"Playfair Display",serif;font-size:18px;font-weight:600}
 .xcard span{display:block;font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:2px}
 .xcard em{flex:none;font-style:normal;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:16px}
+
+.hero-media.ad{aspect-ratio:9/16;max-height:74vh;margin:0 auto 18px;background:#1d1611}
+.hero-media.ad video{object-fit:cover}
+.snd{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.55);color:#fff;border:0;border-radius:999px;padding:8px 12px;font:600 12.5px Inter,sans-serif;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer}
+.snd.on .lb{display:none}
 </style>
 </head>
 <body>
@@ -280,9 +285,9 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
     <p class="kicker">Newport Beach Recovery Clinic</p>
     <h1>Cellular Energy. Faster Recovery. Targeted Pain Relief.</h1>
     <p class="sub">Hyperbaric oxygen, red light, and PEMF stacked into one 90-minute visit, guided by a clinician.</p>
-    <div class="hero-media">
-      <video autoplay muted loop playsinline poster="assets/hero-poster.jpg"><source src="assets/hero-loop.mp4" type="video/mp4"></video>
-      <div class="price-badge"><small>LeCore Reset</small><b>$95</b><s>$440+</s></div>
+    <div class="hero-media ad">
+      <video id="adv" autoplay muted loop playsinline preload="auto" poster="assets/reset-ad-poster.jpg"><source src="assets/reset-ad.mp4" type="video/mp4"></video>
+      <button class="snd" id="snd" type="button" aria-label="Turn sound on"><span class="ic">🔇</span><span class="lb">Tap for sound</span></button>
     </div>
     <a class="btn btn-gold" href="https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&amp;id_mode=1&amp;k_business=860553&amp;k_class_tab=82456&amp;k_service=329169">Claim Your $95 Reset <span class="arr">→</span></a>
     <p class="micro">$440+ in therapies · 90 minutes · Book online</p>
@@ -305,6 +310,7 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
         <div class="item"><span class="ck">✓</span><div><b>Hyperbaric Oxygen Session</b><span>2.0 ATA hard-shell chamber</span></div><em>$240</em></div>
         <div class="item"><span class="ck">✓</span><div><b>Full-Body Red Light Therapy</b><span>Five targeted wavelengths</span></div><em>$100</em></div>
         <div class="item"><span class="ck">✓</span><div><b>High-Energy PEMF</b><span>Mobility and muscle recovery</span></div><em>$100</em></div>
+        <div class="item"><span class="ck">✓</span><div><b>Doctor's Report + Plan</b><span>Your results and next steps, explained</span></div><em>Included</em></div>
       </div>
       <div class="total"><span>Total value</span><s>$440+</s></div>
       <div class="today"><div><small>Your price today</small><b>$95</b></div><span class="save-tag">Save $345+</span></div>
@@ -460,6 +466,8 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
   var d=Math.ceil((end-new Date())/86400000);
   var el=document.getElementById('left');
   if(d>1)el.textContent=d+' days left';else if(d===1)el.textContent='ends tonight';
+  var v=document.getElementById('adv'),sb=document.getElementById('snd');
+  if(v&&sb){sb.addEventListener('click',function(){v.muted=!v.muted;if(!v.muted){v.currentTime=0;v.play();}sb.classList.toggle('on',!v.muted);sb.querySelector('.ic').textContent=v.muted?'🔇':'🔊';sb.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');});}
   document.querySelectorAll('a[href*="wellnessliving.com"]').forEach(function(a){
     a.addEventListener('click',function(){
       if(typeof fbq==='function'){fbq('track',a.href.indexOf('catalog-payment')>-1?'InitiateCheckout':'Lead',{content_name:(a.textContent||'').trim()});}
