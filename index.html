@@ -68,6 +68,11 @@ h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-heigh
 .logo{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;letter-spacing:.06em}
 .logo small{display:block;font-family:Inter;font-size:8.5px;letter-spacing:.3em;font-weight:600;color:var(--muted);margin-top:-2px}
 .pill{background:var(--ink);color:#fff;font-size:13px;font-weight:600;padding:10px 16px;border-radius:999px}
+.top-r{display:flex;align-items:center;gap:14px}
+.clink{font-size:13px;font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.client-book{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;margin:28px 0 8px}
+.client-book b{display:block;font-family:"Playfair Display",serif;font-size:20px;color:var(--brown)}
+.client-book span{display:block;color:var(--muted);margin:4px 0 14px}
 
 /* buttons */
 .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:17px 20px;border-radius:14px;font-weight:700;font-size:16px;letter-spacing:.01em;transition:transform .15s}
@@ -275,7 +280,8 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
 <div class="urgent">🔥 HBOT packages end <b>Nov 30</b> · <span id="left">limited time</span></div>
 <header class="top"><div class="top-in">
   <div class="logo">LECORE<small>NEWPORT BEACH</small></div>
-  <a class="pill" href="https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&amp;id_mode=1&amp;k_business=860553&amp;k_class_tab=82456&amp;k_service=329169">Book $95 Reset</a>
+  <div class="top-r"><a class="clink" href="/book/">Client Booking</a>
+  <a class="pill" href="https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&amp;id_mode=1&amp;k_business=860553&amp;k_class_tab=82456&amp;k_service=329169">Book $95 Reset</a></div>
 </div></header>
 
 <main class="wrap">
@@ -446,6 +452,8 @@ footer{text-align:center;font-size:11px;color:var(--muted);padding:16px 22px 24p
     <a class="btn btn-gold" href="https://www.wellnessliving.com/rs/appointment-start.html?id_class_tab=3&amp;id_mode=1&amp;k_business=860553&amp;k_class_tab=82456&amp;k_service=329169">Claim Your $95 Reset <span class="arr">→</span></a>
     <p class="micro">1441 Superior Ave, Ste A, Newport Beach</p>
   </div>
+
+  <div class="client-book"><b>Already a LeCore client?</b><span>Book your next visit in a few taps.</span><a class="btn btn-ghost" href="/book/">Book Your Next Visit</a></div>
 
   <div class="contact">
     Questions? We're happy to help.
