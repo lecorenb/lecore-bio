@@ -1,0 +1,157 @@
+<!--
+  LeCore guide template. This folder starts with an underscore, so GitHub Pages does not publish it.
+  To make a new guide: copy this file to guides/GUIDE_SLUG/index.html and replace every ALL CAPS placeholder.
+  Then add the guide's card to guides/index.html, its URL to sitemap.xml, and a link on its topic landing page.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GUIDE_TITLE | LeCore Newport Beach</title>
+<meta name="description" content="META_DESCRIPTION">
+<link rel="canonical" href="https://bio.lecorenb.com/guides/GUIDE_SLUG/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GUIDE_TITLE">
+<meta property="og:description" content="META_DESCRIPTION">
+<meta property="og:image" content="https://bio.lecorenb.com/assets/HERO_IMAGE">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"BlogPosting","headline":"GUIDE_TITLE","description":"META_DESCRIPTION","image":"https://bio.lecorenb.com/assets/HERO_IMAGE","datePublished":"PUBLISH_DATE","dateModified":"PUBLISH_DATE","author":{"@type":"Person","name":"Dr. Navid Saadati","jobTitle":"Doctor of Chiropractic"},"publisher":{"@type":"MedicalBusiness","name":"LeCore Newport Beach","url":"https://lecorenb.com","telephone":"+1-949-991-8787","address":{"@type":"PostalAddress","streetAddress":"1441 Superior Ave, STE A","addressLocality":"Newport Beach","addressRegion":"CA","postalCode":"92663"}},"mainEntityOfPage":"https://bio.lecorenb.com/guides/GUIDE_SLUG/"},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guides","item":"https://bio.lecorenb.com/guides/"},{"@type":"ListItem","position":2,"name":"TOPIC_NAME","item":"https://bio.lecorenb.com/TOPIC_PAGE"},{"@type":"ListItem","position":3,"name":"GUIDE_TITLE"}]},
+{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"FAQ_Q1","acceptedAnswer":{"@type":"Answer","text":"FAQ_A1"}},{"@type":"Question","name":"FAQ_Q2","acceptedAnswer":{"@type":"Answer","text":"FAQ_A2"}},{"@type":"Question","name":"FAQ_Q3","acceptedAnswer":{"@type":"Answer","text":"FAQ_A3"}}]}
+]}
+</script>
+<style>
+:root{--cream:#FAF6EF;--cream2:#F2EADC;--ink:#2B2118;--muted:#6B5D50;--gold:#B8924A;--gold2:#93733A;--brown:#3A2A1E;--line:#E4D8C4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.7 Inter,system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:var(--gold2)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--brown);line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,6vw,3rem)}
+h2{font-size:clamp(1.4rem,4vw,1.9rem);margin-top:2em}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.wide{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line)}
+.top .wide{display:flex;justify-content:space-between;align-items:center;height:64px}
+.top nav{display:flex;gap:18px;align-items:center}
+.top nav a{color:var(--brown);text-decoration:none;font-weight:600}
+.logo{font-family:"Playfair Display",serif;font-weight:700;font-size:1.3rem;color:var(--brown);text-decoration:none}
+.btn{display:inline-block;background:var(--gold);color:#fff!important;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:999px}
+.btn:hover{background:var(--gold2)}
+.btn.sm{padding:8px 18px;font-size:.9rem}
+.crumbs{font-size:.85rem;color:var(--muted);padding-top:18px}
+.crumbs a{color:var(--muted)}
+.hero{padding:28px 20px 10px}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);font-weight:600;margin-bottom:12px}
+.meta{font-size:.9rem;color:var(--muted)}
+.hero-img{margin:24px 0;border-radius:18px;aspect-ratio:16/9;object-fit:cover;width:100%}
+.answer{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:18px 22px;border-radius:0 12px 12px 0;margin:1.5em 0}
+ul.check{list-style:none;padding:0}
+ul.check li{position:relative;padding-left:28px;margin-bottom:10px}
+ul.check li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.timeline{border-left:2px solid var(--line);padding-left:26px;margin:1.4em 0}
+.step{position:relative;margin-bottom:20px}
+.step::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--cream)}
+.step strong{display:block;font-family:"Playfair Display",serif;color:var(--brown)}
+.offer{background:var(--brown);color:#E3D6C2;border-radius:22px;padding:34px 26px;margin:2.4em 0;text-align:center}
+.offer h2{color:#fff;margin-top:0}
+.tag{display:inline-block;background:var(--gold);color:#fff;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:12px;font-weight:600}
+.price{font-family:"Playfair Display",serif;font-size:2.6rem;color:#fff;margin:8px 0 18px}
+.offer .reset{font-size:.95rem;margin:18px 0 0}
+.offer .reset a{color:#F0D9A8}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;color:var(--brown)}
+.related{margin:2.4em 0;display:grid;gap:10px}
+.related a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--brown);font-weight:600}
+.trust{text-align:center;font-size:.9rem;color:var(--muted);padding:18px 0;border-top:1px solid var(--line)}
+.disclaimer{font-size:.8rem;color:var(--muted);text-align:center;padding:16px 20px 40px}
+.sticky{display:none}
+@media(max-width:760px){body{font-size:16px}.sticky{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:20}.sticky .btn{width:100%;text-align:center}.disclaimer{padding-bottom:96px}}
+</style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1779051199806264');fbq('track','PageView');fbq('track','ViewContent',{content_name:'Guide: GUIDE_SLUG',content_category:'TOPIC_NAME'});
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1779051199806264&ev=PageView&noscript=1"></noscript>
+</head>
+<body>
+
+<header class="top"><div class="wide">
+  <a class="logo" href="/">LeCore</a>
+  <nav><a href="/guides/">Guides</a><a class="btn sm" href="/book/" data-track="header">Book</a></nav>
+</div></header>
+
+<nav class="crumbs wrap"><a href="/guides/">Guides</a> / <a href="/TOPIC_PAGE">TOPIC_NAME</a></nav>
+
+<section class="hero wrap">
+  <div class="eyebrow">TOPIC_NAME Guide</div>
+  <h1>GUIDE_TITLE</h1>
+  <div class="meta">Reviewed by Dr. Navid Saadati, DC · Webster and Graston certified · PUBLISH_DATE</div>
+</section>
+<div class="wide"><img class="hero-img" src="/assets/HERO_IMAGE" alt="HERO_ALT"></div>
+
+<article class="wrap">
+
+  <div class="answer"><strong>The short answer:</strong> SHORT_ANSWER</div>
+
+  <h2>Who This Is For</h2>
+  <ul class="check"><li>WHO_1</li><li>WHO_2</li><li>WHO_3</li></ul>
+
+  <h2>SECTION_1_HEADING</h2>
+  <p>SECTION_1_BODY</p>
+
+  <h2>SECTION_2_HEADING</h2>
+  <p>SECTION_2_BODY</p>
+
+  <h2>What to Expect at LeCore</h2>
+  <div class="timeline">
+    <div class="step"><strong>Your first visit</strong>FIRST_VISIT</div>
+    <div class="step"><strong>Weeks 1 to 4</strong>EARLY_RESULTS</div>
+    <div class="step"><strong>Ongoing</strong>LONG_TERM</div>
+  </div>
+
+  <div class="offer">
+    <div class="tag">Start Here</div>
+    <h2>OFFER_NAME</h2>
+    <div class="price">OFFER_PRICE</div>
+    <a class="btn" href="OFFER_LINK" data-track="offer">Claim This Offer</a>
+    <p class="reset">New to LeCore? Start with the <a href="/" data-track="reset">$95 Reset Visit</a>: red light, PEMF, HBOT and nervous system mapping in one visit.</p>
+  </div>
+
+  <h2>Common Questions</h2>
+  <details><summary>FAQ_Q1</summary><p>FAQ_A1</p></details>
+  <details><summary>FAQ_Q2</summary><p>FAQ_A2</p></details>
+  <details><summary>FAQ_Q3</summary><p>FAQ_A3</p></details>
+
+  <div class="related">
+    <h3>Keep Reading</h3>
+    <a href="/TOPIC_PAGE">Everything about TOPIC_NAME at LeCore</a>
+    <a href="/guides/RELATED_GUIDE_1/">RELATED_TITLE_1</a>
+    <a href="/guides/RELATED_GUIDE_2/">RELATED_TITLE_2</a>
+  </div>
+
+  <div class="trust">5-star Google reviews · Clinician-led care · 1441 Superior Ave, STE A, Newport Beach · <a href="tel:+19499918787">(949) 991-8787</a></div>
+</article>
+
+<p class="disclaimer">Educational content only, not medical advice. Individual results vary. Talk with your physician before starting any new therapy.</p>
+
+<div class="sticky"><a class="btn" href="OFFER_LINK" data-track="sticky">OFFER_NAME · OFFER_PRICE</a></div>
+
+<script>
+document.querySelectorAll('[data-track]').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(window.fbq){fbq('trackCustom','GuideClick',{guide:'GUIDE_SLUG',button:a.dataset.track});}
+  });
+});
+</script>
+</body>
+</html>
